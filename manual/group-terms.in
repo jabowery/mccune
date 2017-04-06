@@ -1,0 +1,9 @@
+% The stream of objects to be rewritten can include
+% terms, clauses, and formulas.  They are parsed
+% as mccune/LADR "terms".
+
+(a' * b) * (a' * b)'.
+
+y * (z * (((w * w') * (x * z)') * y))' = x.
+
+

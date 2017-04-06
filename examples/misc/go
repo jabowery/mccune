@@ -1,0 +1,54 @@
+#!/bin/csh
+
+
+if ($#argv != 2) then
+	echo "need 2 args: bin-directory ouput-extension"
+	exit(1)
+endif
+
+set d=$1
+set out=$2
+
+# job BA3
+
+$d/mccune -f BA3.in > BA3.$out
+
+# job mol-hints
+
+# $d/mccune -f mol-hints.in > mol-hints.$out
+
+# job oml6
+
+$d/mccune -f oml6.in > oml6.$out
+
+# job RBA-2
+
+$d/mccune -f RBA-2.in > RBA-2.$out
+
+# job bw
+
+$d/mccune -f bw.in > bw.$out
+
+# job w_sk
+
+$d/mccune -f w_sk.in > w_sk.$out
+
+# job xcb-reflex
+
+$d/mccune -f xcb-reflex.in > xcb-reflex.$out
+
+# job steam
+
+$d/mccune -f steam.in > steam.$out
+
+# job subset_trans
+
+$d/mccune -f subset_trans.in > subset_trans.$out
+
+# job HWV006-1
+
+$d/mccune -f HWV006-1.in > HWV006-1.$out
+
+# job lifsch
+
+$d/mccune -f lifsch.in > lifsch.$out

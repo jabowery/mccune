@@ -1,0 +1,30 @@
+#!/bin/csh
+
+
+if ($#argv != 2) then
+	echo "need 2 args: bin-directory ouput-extension"
+	exit(1)
+endif
+
+set d=$1
+set out=$2
+
+# job dn1
+
+$d/mccune -f dn1.in > dn1.$out
+
+# job sh1
+
+$d/mccune -f sh1.in > sh1.$out
+
+# job sh1-def
+
+$d/mccune -f sh1-def.in > sh1-def.$out
+
+# job pair-def
+
+$d/mccune -f pair-def.in > pair-def.$out
+
+# job pair
+
+$d/mccune -f pair.in > pair.$out
